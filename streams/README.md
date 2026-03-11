@@ -6,3 +6,13 @@ Examples:
 * [Simple writer](http://mdn.github.io/dom-examples/streams/simple-writer/): This example shows how to to write to a writable stream, then decode the stream and write the contents to the UI.
 * [Transform binary chunks to strings](http://mdn.github.io/dom-examples/streams/strings-transform-stream/): In this example, binary data chunks of a text file are converted to string lines by a [```TransformStream```](https://developer.mozilla.org/en-US/docs/Web/API/TransformStream).
 * [Unpack chunks of a PNG](http://mdn.github.io/dom-examples/streams/png-transform-stream/): This example shows how [```pipeThrough()```](https://developer.mozilla.org/en-US/docs/Web/API/ReadableStream/pipeThrough) can be used to transform a ReadableStream into a stream of other data types by transforming a data of a PNG file into a stream of PNG chunks.
+const res = await fetch('https://nodejs.org/api/documentation.json');
+if (res.ok) {
+  const data = await res.json();
+  console.log(data);
+
+}const res = await fetch('https://nodejs.org/api/documentation.json');
+if (res.ok) {
+  const data = await res.json();
+  console.log(data);
+}
